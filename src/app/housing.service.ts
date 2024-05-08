@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HousingLocation } from './housing-location';
 
 @Injectable({
-  providedIn: 'root'
+  // defines the service scope
+  providedIn: 'root' // HousingService is available at root so can be used at any part of the app
 })
 export class HousingService {
   protected housingLocationList: HousingLocation[] = [
