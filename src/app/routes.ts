@@ -14,11 +14,11 @@ const routeConfig: Routes = [
         component: HomeComponent,
         title: 'Home Page'
     },
-    // "/details" path:
+    // "/details/:id" path:
     {
-        path: 'details', 
+        path: 'details/:id', 
         component: DetailsComponent,
-        title: 'Home Page'
+        title: 'Details'
     }
 ];
 export default routeConfig;
