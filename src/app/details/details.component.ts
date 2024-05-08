@@ -28,4 +28,12 @@ export class DetailsComponent {
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
   }
+
+  submitApplication(){
+    this.housingService.submitApplication(
+      this.applyForm.value.firstName ?? '', // ?? means if firstName is null or undefined, use ''
+      this.applyForm.value.lastName ?? '',
+      this.applyForm.value.email ?? ''
+    )
+  }
 }

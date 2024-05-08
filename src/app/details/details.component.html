@@ -1,4 +1,5 @@
 <article>
+    <!-- Housing location deatils -->
     <img
         class="listing-photo"
         [src]="housingLocation?.photo"
@@ -19,11 +20,11 @@
     </section>
     <br>
     <br>   
-     
+
     <!-- Application Form -->
     <section class="listing-apply">
         <h2 class="section-heading">Apply to live here</h2>
-        <form [formGroup]="applyForm">
+        <form [formGroup]="applyForm" (submit)="submitApplication()">
             <!-- first name -->
             <label for="first-name">First name</label>
             <input id="first-name" type="text" formControlName="firstName">
