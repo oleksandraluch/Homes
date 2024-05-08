@@ -37,13 +37,25 @@
             <label for="email">Email</label>
             <input id="email" type="email" formControlName="email">
 
-            <button class="primary" type="submit">Apply</button>
+            <!-- Email validation -->
+            <div *ngIf="applyForm.get('email')?.errors && applyForm.get('email')?.dirty">
+                <div *ngIf="applyForm.get('email')?.errors">
+                  Please enter a valid email address. <br><br>
+                </div>
+            </div>
+
+            <button class="primary" 
+                    type="submit"
+                    [disabled]="applyForm.invalid"> <!-- button is disabled if email in invalid -->
+                    Apply
+            </button>
         </form>
 
         <!-- Confirmation message -->
         <div *ngIf="formSubmitted">
             <br>
-            Your application is submitted!
+            Your application was submitted!
         </div>
+
     </section>
 </article>
