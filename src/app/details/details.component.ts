@@ -5,7 +5,6 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 
 import { HousingService } from '../housing.service';
 import { HousingLocation } from '../housing-location';
-import { flatMap } from 'rxjs';
 
 @Component({
   selector: 'app-details',
