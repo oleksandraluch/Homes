@@ -22,6 +22,7 @@ export class DetailsComponent {
     lastName: new FormControl(''),
     email: new FormControl('')
   });
+  formSubmitted : boolean = false;
 
   constructor(){
     // id is a local var
@@ -35,5 +36,6 @@ export class DetailsComponent {
       this.applyForm.value.lastName ?? '',
       this.applyForm.value.email ?? ''
     )
+    this.formSubmitted = true;
   }
 }

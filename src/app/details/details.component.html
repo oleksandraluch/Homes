@@ -39,5 +39,11 @@
 
             <button class="primary" type="submit">Apply</button>
         </form>
+
+        <!-- Confirmation message -->
+        <div *ngIf="formSubmitted">
+            <br>
+            Your application is submitted!
+        </div>
     </section>
 </article>
