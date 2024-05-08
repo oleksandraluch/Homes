@@ -4,6 +4,7 @@
         [src]="housingLocation?.photo"
         alt="Exterior photo of {{ housingLocation?.name }}"
         crossorigin/>
+
     <section class="listing-description">
         <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
         <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
@@ -15,5 +16,27 @@
             <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
             <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
         </ul>
+    </section>
+    <br>
+    <br>   
+     
+    <!-- Application Form -->
+    <section class="listing-apply">
+        <h2 class="section-heading">Apply to live here</h2>
+        <form [formGroup]="applyForm">
+            <!-- first name -->
+            <label for="first-name">First name</label>
+            <input id="first-name" type="text" formControlName="firstName">
+
+            <!-- last name -->
+            <label for="last-name">Last name</label>
+            <input id="last-name" type="text" formControlName="lastName">
+
+            <!-- email -->
+            <label for="email">Email</label>
+            <input id="email" type="email" formControlName="email">
+
+            <button class="primary" type="submit">Apply</button>
+        </form>
     </section>
 </article>
