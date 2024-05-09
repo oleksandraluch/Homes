@@ -12,6 +12,8 @@ import { HousingLocation } from '../housing-location';
   styleUrls: ['./housing-location.component.css']
 })
 export class HousingLocationComponent {
-  @Input() housingLocation!:HousingLocation;
+  @Input() housingLocation!:HousingLocation; // @Input() - mark housinglocation as an input property
+                                             // ! - specifies that housingLocation property is required
+                                             // : HousingLocation - property type
 }
  
