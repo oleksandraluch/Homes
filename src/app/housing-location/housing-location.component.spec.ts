@@ -1,4 +1,5 @@
 // import { ComponentFixture, TestBed } from '@angular/core/testing';
+// import { RouterTestingModule } from "@angular/router/testing";
 
 // import { HousingLocationComponent } from './housing-location.component';
 
@@ -8,7 +9,7 @@
 
 //   beforeEach(() => {
 //     TestBed.configureTestingModule({
-//       imports: [HousingLocationComponent]
+//       imports: [HousingLocationComponent, RouterTestingModule]
 //     });
 //     fixture = TestBed.createComponent(HousingLocationComponent);
 //     component = fixture.componentInstance;
