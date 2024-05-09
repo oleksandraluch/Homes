@@ -1,3 +1,5 @@
+Based on Angular tutorial https://angular.dev/tutorials/first-app
+
 To run the Homes App locally:
 
 1. start the json server. It provides homes data <br>
